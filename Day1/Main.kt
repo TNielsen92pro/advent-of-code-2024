@@ -1,5 +1,4 @@
-package Puzzle1
-import java.io.File
+package Day1
 
 fun main() {
     val resource = object {}.javaClass.getResource("./data/input") // Data path to input data
@@ -52,5 +51,7 @@ fun main() {
         }
     }
 
-    println("Final diff: $finalDiff")
+    println("Puzzle 1 final diff: $finalDiff")
+
+
 }
