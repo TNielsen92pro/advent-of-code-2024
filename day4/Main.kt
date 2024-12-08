@@ -23,7 +23,6 @@ fun main() {
     val stringToMatch = "XMAS"
     var totalMatches = 0
 
-
     // Loop through all the lines. Original indices refer to the line and column of the first letter check in the inner XMAS search
     charMatrix.forEachIndexed { originalYIndex, line ->
         // Loop through each character in the current line
