@@ -61,19 +61,19 @@ fun main() {
 
             // PUZZLE 2 (Same concept but base-3):
 
-            // Extract max loop iterations by setting a binary number with the length of the number of operators, and fill it with 1's
+            // Extract max loop iterations by setting a ternary number with the length of the number of operators, and fill it with 1's
             val maxNumberOfPossibleSequencesTernary = "2".padStart(numbers.size - 1, '2').toInt(3)
 
             var operationsRepresentationTernary = 0
 
             while(operationsRepresentationTernary <= maxNumberOfPossibleSequencesTernary) {
-                // Turn operations representation into a binary string with leading 0's for non-used bits
-                val binaryOperationsRepresentation = operationsRepresentationTernary.toString(3).padStart(numbers.size - 1, '0')
+                // Turn operations representation into a ternary string with leading 0's for non-used bits
+                val ternaryOperationsRepresentation = operationsRepresentationTernary.toString(3).padStart(numbers.size - 1, '0')
 
                 var currentSumOfOperationsTernary: Long = numbers[0].toLong()
 
                 for(i in 1..<numbers.size) {
-                    val currentOperationBit = binaryOperationsRepresentation[i-1]
+                    val currentOperationBit = ternaryOperationsRepresentation[i-1]
                     val operation = digitToOperation(currentOperationBit.digitToInt())
                     val newSum: Long = operation(currentSumOfOperationsTernary, numbers[i].toInt())
 
