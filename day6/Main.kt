@@ -1,5 +1,4 @@
 package day6
-import kotlin.text.Regex
 
 // IMPROTANT:
 // This code takes a couple of seconds to run because of heavy simulations. Don't be impatient.

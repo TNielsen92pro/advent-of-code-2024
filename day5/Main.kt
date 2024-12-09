@@ -1,5 +1,4 @@
 package day5
-import kotlin.text.Regex
 
 // The current implementation expects the input data to be fully square. Empty or shorter lines are not allowed.
 
